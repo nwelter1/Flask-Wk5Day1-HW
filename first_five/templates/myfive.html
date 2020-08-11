@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<header class="banner">
+    <h1 class="header-text">Here are my top 5!</h1>
+</header>
+<ul>
+{% for key,item in athlete_dict.items()%}
+    <li>{{ key }} - {{ item }}</li>
+{% endfor %}
+</ul>
+{% endblock content %}
